@@ -275,7 +275,7 @@ function openSpeciesCard(){
   drawNameTag(pctx, temp);
   $('#speciesModal').classList.remove('hidden');
 }
-$('#closeModal').onclick = ()=> $('#speciesModal').classList.add('hidden');
+$('#closeModal').onclick = ()=> { $('#speciesModal').classList.add('hidden'); fish = pendingFish || fish || mkFish(); swimming = true; };
 
 // ---------- Build button ----------
 $('#build').onclick = ()=>{ fish = mkFish(); openSpeciesCard(); };
